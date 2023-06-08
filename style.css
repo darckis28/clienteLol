@@ -21,16 +21,18 @@ body{
     overflow: hidden;
 }
 .cabecera{
-    padding: 15px;
+    padding: 8px 20PX;
     background-color: rgba(0 0 0/.2);
     backdrop-filter: blur(2px);
     border-top: 2px solid var(--dorado);
     border-bottom: 1px solid #ded4d453;
+    display: flex;
 }
 .navegator{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 85%;
 }
 .content__nav{
     display: flex;
@@ -92,7 +94,7 @@ border: 1px solid #655f5f ;
 .list_nav.ico::after {
     content: "";
     width: 2px;
-    height: 45px;
+    height: 58px;
     background:linear-gradient(180deg,#e9d6a50e,#d7c38f,#e9d6a512);
   }
   .list_nav.recursos{
@@ -125,4 +127,31 @@ border: 1px solid #655f5f ;
 }
 .list_nav li a img{
     width: 30px;
+}
+
+.estadistica{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:15px ;
+    width: 15%;
+}
+.estadistica img{
+    width: 80px;
+}
+.status .nombre{
+    color: var(--letras);
+}
+.status .estado{
+    color: #2d770c;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.circle{
+    width:10px ;
+    height: 10px;
+    border: 2px solid #7dfe41 ;
+    background-color: #2d770c;
+    border-radius: 50%;
 }
