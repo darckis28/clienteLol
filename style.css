@@ -234,6 +234,7 @@ body {
     margin: 0 auto;
     display: block;
     display: flex;
+    align-items: center;
     gap: 10px;
     .cancel{
         width: 30px;
