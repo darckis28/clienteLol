@@ -15,10 +15,22 @@
       src="https://kit.fontawesome.com/30a542c1ff.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="index.js"></script>
     <title>Client Lol</title>
   </head>
   <body>
     <div class="container">
+      <div class="container__aceptar">
+        <div class="container_circle">
+          <div class="circle_exterior">
+            <button class="cancelar"><i class="fa-solid fa-x"></i> </button>
+            <div class="cirle_interior">
+              <h3>partida encontrada</h3>
+              <button class="aceptar_partida"></button>
+            </div>
+          </div>
+        </div>
+      </div>
       <header class="cabecera">
         <nav class="navegator">
           <div class="content__nav lef">
@@ -128,9 +140,15 @@
                 >
               </div>
               <div class="container_players">
-                <img src="./assets/img/partida normal.png" alt="">
+                <img src="./assets/img/partida normal.png" alt="" />
                 <div class="number_players">
-                  <span class="players"><i class="fa-solid fa-user"></i><i class="fa-solid fa-user"></i><i class="fa-solid fa-user"></i><i class="fa-solid fa-user"></i><i class="fa-solid fa-user"></i></span>
+                  <span class="players"
+                    ><i class="fa-solid fa-user"></i
+                    ><i class="fa-solid fa-user"></i
+                    ><i class="fa-solid fa-user"></i
+                    ><i class="fa-solid fa-user"></i
+                    ><i class="fa-solid fa-user"></i
+                  ></span>
                   <span class="nombre_part">Selección Oculta</span>
                 </div>
               </div>

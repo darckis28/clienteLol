@@ -25,6 +25,103 @@ body {
     rgba(8, 71, 48, 0.3)
   );
   overflow: hidden;
+  .container__aceptar {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    .container_circle {
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid var(--dorado-claro);
+      background-color: rgba(0, 0, 0, 0.3);
+      .circle_exterior {
+        width: 450px;
+        height: 450px;
+        border: 1px solid var(--dorado-claro);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: conic-gradient(#91ffeb 1deg, rgba(0 0 0 /0.5) 0deg);
+        .cancelar{
+          width: 30px;
+          width: 30px;
+          position: absolute;
+          bottom: -18px;
+          border: 3px solid var(--dorado-claro);
+          background-color: rgba(0 0 0 /0.5);
+          border-radius: 50%;
+          padding: 6px;
+          font-weight: bold;
+          cursor: pointer;
+          &:hover{
+            background-color: rgba(125, 117, 117, 0.5)
+          }
+        }
+        .cirle_interior {
+          width: 400px;
+          height: 400px;
+          border: 3px solid var(--dorado-claro);
+          border-radius: 50%;
+          background: url("./assets/img/League-Bilgewater.webp") center
+            center/cover;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          & h3 {
+            font-size: 28px;
+            text-transform: uppercase;
+          }
+          & button {
+            position: absolute;
+            bottom: -32px;
+            width: 170px;
+            height: 40px;
+            border-radius: 0 0 31px 31px;
+            padding: 15px;
+            border: 2px solid #14fafd;
+            background-image: url("./assets/img/humo.gif");
+            background-size: cover;
+            cursor: pointer;
+            &::before {
+              content: "Aceptar";
+              position: absolute;
+              width: 168px;
+              height: 38px;
+              top: 0;
+              left: 0;
+              display: flex;
+              color: var(--letras);
+              font-family: var(--tipografia);
+              text-transform: uppercase;
+              align-items: center;
+              justify-content: center;
+              background-color: rgba(33, 185, 245, 0.2);
+              border-radius: 0 0 31px 31px;
+            }
+            &:hover {
+              border-color: rgb(255, 255, 255);
+              background-image: url("./assets/img/humo-rapido.gif");
+            }
+            &:hover::before {
+              background-color: rgba(18, 187, 234, 0.65);
+            }
+          }
+        }
+      }
+    }
+  }
 }
 .cabecera {
   padding: 8px 20px;
@@ -236,25 +333,25 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    .cancel{
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        background-color: rgba(0 0 0/0.2);
-        border: 2px solid var(--dorado);
-        cursor: pointer;
-        color: var(--letras);
-        &:hover{
-            border-color: var(--dorado-claro);
-            background-color: rgba(124, 120, 120, 0.2);
-        }
+    .cancel {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: rgba(0 0 0/0.2);
+      border: 2px solid var(--dorado);
+      cursor: pointer;
+      color: var(--letras);
+      &:hover {
+        border-color: var(--dorado-claro);
+        background-color: rgba(124, 120, 120, 0.2);
+      }
     }
     .start {
       width: 150px;
       height: 40px;
       border-radius: 0 0 31px 31px;
       padding: 15px;
-      border: 1px solid #14fafd;
+      border: 2px solid #14fafd;
       background-image: url("./assets/img/humo.gif");
       background-size: cover;
       cursor: pointer;
@@ -262,8 +359,8 @@ body {
       &::before {
         content: "Buscar Partida";
         position: absolute;
-        width: 150px;
-        height: 40px;
+        width: 148px;
+        height: 38px;
         top: 0;
         left: 0;
         display: flex;
@@ -276,7 +373,7 @@ body {
         border-radius: 0 0 31px 31px;
       }
       &:hover {
-        border-color: rgb(238, 226, 226);
+        border-color: rgb(255, 255, 255);
         background-image: url("./assets/img/humo-rapido.gif");
       }
       &:hover::before {
@@ -289,49 +386,48 @@ body {
 .friends {
   width: 15%;
   height: calc(100vh - 88px);
-  background: linear-gradient(180deg, #11293b,#020C14);
-  .grupo_details{
+  background: linear-gradient(180deg, #11293b, #020c14);
+  .grupo_details {
     width: 100%;
-    
+
     background-image: url("./assets/img/humo.gif");
     background-size: cover;
-    .details{
-        width: 100%;
-        padding: 15px;
-        background-color: rgba(16, 76, 197, 0.363);
-        .nombre_partida{
-           & span{
-            text-transform: uppercase;
-            font-size: 12px;
-            font-weight: bold;
-            & i{
-                margin-right: 10px;
-            }
-        }  
+    .details {
+      width: 100%;
+      padding: 15px;
+      background-color: rgba(16, 76, 197, 0.363);
+      .nombre_partida {
+        & span {
+          text-transform: uppercase;
+          font-size: 12px;
+          font-weight: bold;
+          & i {
+            margin-right: 10px;
+          }
         }
-        .container_players{
+      }
+      .container_players {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        & img {
+          width: 50px;
+        }
+        .number_players {
+          .players {
+            margin: 5px;
             display: flex;
-            align-items: center;
-            gap: 10px;
-            & img{
-                width: 50px;
+            gap: 5px;
+            color: rgba(227, 213, 213, 0.45);
+            :nth-child(1) {
+              color: rgba(227, 213, 213, 0.912);
             }
-            .number_players{
-                .players{
-                    margin: 5px;
-                    display: flex;
-                    gap: 5px;
-                    color: rgba(227, 213, 213, 0.45);
-                    :nth-child(1){
-                        color: rgba(227, 213, 213, 0.912)
-                    }
-                }
-                .nombre_part{
-                    font-size: 12px;
-                }
-            }
+          }
+          .nombre_part {
+            font-size: 12px;
+          }
         }
-       
+      }
     }
   }
 }
