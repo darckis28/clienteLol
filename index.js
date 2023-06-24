@@ -40,7 +40,8 @@ const timer = ()=>{
 }
 const online = document.querySelector(".online"),
 circle  =document.querySelector(".circle"),
-btn_aceptar = document.querySelector(".aceptar_partida");
+btn_aceptar = document.querySelector(".aceptar_partida"),
+btnQuitarCola=document.querySelector(".cancel");
 
 btn_start.addEventListener("click",()=>{ 
     btn_start.disabled =true
@@ -69,4 +70,15 @@ btn_cancelar.addEventListener("click", () => {
     time.textContent="Selección oculta"
   },5000)
 });
+btnQuitarCola.addEventListener("click",()=>{
+    clearInterval(espera);
+    btn_start.disabled =false;
+    online.textContent="online"
+    online.style.color="#2d770c"
+    circle.style.backgroundColor="#2d770c";
+    circle.style.borderColor="#7dfe41";
+    contenedor_players.style.backgroundColor="rgba(16, 76, 197, 0.363)"
+    time.textContent="Selección oculta"
+
+})
 
