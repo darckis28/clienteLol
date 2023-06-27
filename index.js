@@ -83,6 +83,6 @@ aceptarPartida.addEventListener("click", () => {
   porcentaje = 0;
   progress.style.background = ` conic-gradient(#91ffeb 360deg, rgba(0 0 0 /.5) 0deg)`;
   setTimeout(()=>{
-  window.location.href = "clienteLol/assets/pages/Espera.html";
+  window.location.href = "assets/pages/Espera.html";
   },2000)
 });
