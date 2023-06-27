@@ -2,7 +2,7 @@
   --dorado: #7c6519;
   --dorado-claro: #c4a028;
   --letras: #f0e6d2;
-  --tipografia: @import url("./img/typografia/lol.tff");
+  --tipografia:@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 }
 * {
   margin: 0;
@@ -15,6 +15,7 @@ body {
   background: url("./assets/img/League-Bilgewater.webp") no-repeat center
     center/cover;
   overflow: hidden;
+  color: white;
 }
 .container {
   width: 100vw;
