@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../css/espera.css">
+    <script
+      defer
+      src="https://kit.fontawesome.com/30a542c1ff.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./../js/pelea.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="resultado">
+      <img class="imagen_resultado" src="../img/defeat.png" alt="resultado">
+      <span class="mensaje_resultado">Perdiste</span>
+      <button class="regresar">Regresar</button>
+    </div>
+    <div class="box">
+      <h2><i class="fa-solid fa-user"></i></h2>
+      <h3 id="nombre">sven shadow</h3>
+      <div class="power">
+        <div class="box_power">
+          <h4>vida <i class="fa-solid fa-heart"></i></h4>
+          <p class="vida_jugador">15888</p>
+        </div>
+        <div class="box_power">
+          <h4>Daño <i class="fa-sharp fa-solid fa-hand-fist"></i></h4>
+          <p class="poder_jugador">15888</p>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <h2><i class="fa-solid fa-chess-king"></i></h2>
+      <h3>El mas Fuerte</h3>
+      <div class="power">
+        <div class="box_power">
+          <h4>vida <i class="fa-solid fa-heart"></i></h4>
+          <p class="vida_enemigo">15888</p>
+        </div>
+        <div class="box_power">
+          <h4>Daño <i class="fa-sharp fa-solid fa-hand-fist"></i></h4>
+          <p class="poder_enemigo">15888</p>
+        </div>
+      </div>
+    </div>
+    <div class="box_vida enem">
+      <div class="enem_vid"></div>
+    </div>
+    <div class="box_vida jug">
+      <div class="jug_vid"></div>
+    </div>
+    <img  class="versus" src="./../img/vs.png" alt="versus">
+    <div class="seccion_carga">
+      <span id="mensaje"> Calculando daño y vida : 100%</span>
+      <div class="carga">
+        <div class="progreso"></div>
+      </div>
+    </div>
+  </body>
+</html>
